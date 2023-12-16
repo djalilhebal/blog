@@ -1,6 +1,12 @@
-# Portfolio Starter Kit
+# Djalil's Blog
 
-This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). It allows you to write Markdown and focus on the _content_ of your portfolio. This starter includes:
+https://blog.djalil.me
+
+Public ramblings.
+
+---
+
+It allows you to write Markdown and focus on the _content_ of your portfolio. This starter includes:
 
 - Automatically configured to handle Markdown/MDX
 - Generates an RSS feed based on your posts
@@ -15,20 +21,118 @@ This portfolio is built with **Next.js** and a library called [Nextra](https://n
 1. Update the meta tags in `pages/_document.js`.
 1. Update the posts inside `pages/posts/*.md` with your own content.
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Getting started
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example blog my-blog
-# or
-yarn create next-app --example blog my-blog
+```sh
+git clone https://github.com/djalilhebal/blog
+npm install
+npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+## Notes to self
+
+TDLR: Decided to use Nextra and start by cloning the `nextjs-portfolio-starter` template from Vercel.
+
+TLDR: Since I'm starting to like Vercel, I decided to use their framework (Next.js) and one of their templates (which is based on Nextra).
+
+- https://github.com/vercel/nextjs-portfolio-starter
+    * https://vercel.com/templates/next.js/portfolio-starter-kit
+    * Uses "Next.js and a library called Nextra".
+
+Decided not to use
+```sh
+npx create-next-app --example blog my-blog
+```
+because it uses old package versions.
+
+### Requirements
+
+- Markdown
+    * Maybe MDX as well
+
+- Custom components (like AudioQuote)
+
+- Pref uses tech I am familiar with (JavaScript or TypeScript, React or Vue, etc.).
+
+
+### Options
+
+- Next.js plus MDX, or Nextra (React)
+
+- Nuxt (Vue)
+
+### Details about Nextra
+
+Decided to clone the repo directly instead of using `create-next-app`.
+`create-next-app` seems to use an old version of Nextra.
+
+```sh
+git clone https://github.com/vercel/nextjs-portfolio-starter blog1
+cd blog1
+npm install
+npm run dev
+```
+
+Instead of something like this:
+```sh
+npx create-next-app --example blog blog2
+cd blog2
+npm run dev
+```
+
+<details>
+<summary>Comparing dependencies</summary>
+
+`blog1/package.json`:
+```json
+{
+  // ...
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^13.5.6",
+    "nextra": "^2.13.2",
+    "nextra-theme-blog": "^2.13.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rss": "^1.2.2"
+  },
+  // No "devDependencies"
+  // ...
+}
+```
+
+`blog2/package.json`:
+```json
+{
+  // ...
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "latest",
+    "nextra": "^2.0.0-beta.5",
+    "nextra-theme-blog": "^2.0.0-beta.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rss": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "typescript": "^4.7.4"
+  }
+  // ...
+}
+```
+
+</details>
+
+
+## Credits
+
+- Started as a clone of the [`nextjs-portfolio-starter` template](https://github.com/vercel/nextjs-portfolio-starter).
+- Built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/)/
+- Deployed on [Vercel](https://vercel.com/).
+
+- [Hexagon icon | SVG Silh](https://svgsilh.com/image/3202629.html)
