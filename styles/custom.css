@@ -1,0 +1,11 @@
+.kai-audioquote {
+    display: inline-block;
+}
+
+@media (prefers-color-scheme: light) {
+    article .kai-audioquote {
+        --color: blueviolet;
+        color: white;
+    }
+    
+}
