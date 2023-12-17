@@ -1,10 +1,11 @@
-# Djalil's Blog
+# Djalil's Notes
 
 https://blog.djalil.me
 
 Public ramblings.
 
----
+
+## Original intro
 
 It allows you to write Markdown and focus on the _content_ of your portfolio. This starter includes:
 
@@ -14,12 +15,12 @@ It allows you to write Markdown and focus on the _content_ of your portfolio. Th
 - Easily categorize posts with tags
 - Fast, optimized web font loading
 
-## Configuration
+### Configuration
 
 1. Update your name in `theme.config.js` or change the footer.
-1. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`.
-1. Update the meta tags in `pages/_document.js`.
-1. Update the posts inside `pages/posts/*.md` with your own content.
+2. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`.
+3. Update the meta tags in `pages/_document.js`.
+4. Update the posts inside `pages/posts/*.md` with your own content.
 
 
 ## Getting started
@@ -52,7 +53,7 @@ because it uses old package versions.
 - Markdown
     * Maybe MDX as well
 
-- Custom components (like AudioQuote)
+- Custom components (like `AudioQuote`)
 
 - Pref uses tech I am familiar with (JavaScript or TypeScript, React or Vue, etc.).
 
