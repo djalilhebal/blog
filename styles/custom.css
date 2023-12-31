@@ -1,3 +1,4 @@
+/** KAI AUDIOQUOTE **/
 .kai-audioquote {
     display: inline-block;
 }
@@ -8,4 +9,25 @@
         color: white;
     }
     
+}
+
+
+/** KAI FIN **/
+
+article > hr:has(+ p:last-of-type.k-fin) {
+    visibility: hidden;
+    display: none;
+}
+
+article > hr + p:last-of-type.k-fin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    font-size: large;
+    color: violet;
+    background-image: url(/paint-splatter-2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

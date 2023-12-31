@@ -8,12 +8,11 @@ See `posts/zero/index.md`
 - [ ] Permalinks that differ from the file system structure.
 Something similar to Jekyll's `permalink`.
 
-- [ ] CHECK: https://github.com/willemliu/static-next
-
 - [ ] Add comments, esp for drafts
     * `nextra-theme-blog` has peer dependency on `react-cusdis`.
 
 - [ ] Change Prettier config. Use something similara to Airbnb JavaScript Style Guide.
+
 
 ## NOTES TO SELF
 
@@ -36,6 +35,9 @@ Something similar to Jekyll's `permalink`.
 
 [^2]: Footnote text.
 ```
+
+- Nextra depends on https://www.npmjs.com/package/@napi-rs/simple-git
+which has a method to `getFileLatestModifiedDate`.
 
 
 ## DONE

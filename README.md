@@ -134,4 +134,8 @@ npm run dev
 - Built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/)/
 - Deployed on [Vercel](https://vercel.com/).
 
+### Resources used
+
+- The paint splatter image (`paint-splatter-2.png`) was downloaded from https://www.onlygfx.com/18-paint-splatters-png-transparent/
+
 - [Hexagon icon | SVG Silh](https://svgsilh.com/image/3202629.html)
