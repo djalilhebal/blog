@@ -91,6 +91,7 @@ const [, id] = messageLink.match(/thread\/(\d+)/)
 **My id**  
 <!-- src="./screenshots/0FB-profile-moi.png" -->
 <img alt="My profile in Italian" src="https://dev-to-uploads.s3.amazonaws.com/i/pnajq03p1gkafksxv8yv.png" width="250px" align="left" style="margin: 10px; margin-left: 0;" />
+
 We assume I'm already logged in. To get my id, we go to my profile page (`/profile.php`) and extract it from the "Registo de atividade" ("Activity Log") link.  
 We basically repeat the same work we did earlier with `id` but this time the link has this pattern: `https://0.facebook.com/<MY_ID>/allactivity`.  
 **Note: Many pieces of code in my app are currently language-specific (only English works for now).**

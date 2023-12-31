@@ -1,8 +1,6 @@
-# Djalil's Notes
+# Djalil's public ramblings
 
 https://blog.djalil.me
-
-Public ramblings.
 
 
 ## Original intro
