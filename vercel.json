@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+        "source": "/introducing-super-scoreboard",
+        "destination": "https://djalil-blog-neo.vercel.app/introducing-super-scoreboard"
+    }
+  ]
+}
