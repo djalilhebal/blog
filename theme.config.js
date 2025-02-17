@@ -4,15 +4,15 @@ const YEAR = new Date().getFullYear()
 
 export default {
   comments: <Cusdis />,
+  cusdis: {
+    appId: '02edf755-58d7-4d18-823b-56f347e2fc38'
+  },
   components: {
     p: props => {
       const maybeFin = ['FIN.', 'END.'].includes(props.children);
       const className = maybeFin ? 'k-fin' : null;
       return <p className={className} {...props}></p>;
     },
-  },
-  cusdis: {
-    appId: '02edf755-58d7-4d18-823b-56f347e2fc38'
   },
   footer: (
     <footer>
@@ -32,5 +32,5 @@ export default {
         `}</style>
       </small>
     </footer>
-  )
+  ),
 }

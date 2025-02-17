@@ -8,10 +8,15 @@ See `posts/zero/index.md`
 - [ ] Permalinks that differ from the file system structure.
 Something similar to Jekyll's `permalink`.
 
-- [ ] Add comments, esp for drafts
-    * `nextra-theme-blog` has peer dependency on `react-cusdis`.
-
 - [ ] Change Prettier config. Use something similara to Airbnb JavaScript Style Guide.
+
+- [ ] Nextra only dark mode.
+
+- [ ] Replace `scripts/gen-rss.js`
+    * Currently it is skipping pages that are inside parent folders.
+    For example: `posts/whatever/index.md` instead of using `whatever` as the page name.
+    * It relies on frontmatter data. Its absence crashes the script, causing the build to fail.
+    We want it to use frontmatter if it exists, otherwise use markdown content (H1 for example) or skip the file (and showing a warning).
 
 
 ## NOTES TO SELF
@@ -43,3 +48,8 @@ which has a method to `getFileLatestModifiedDate`.
 ## DONE
 
 - [x] FIX: I don't like that the footer is part of the `<article>` and is added using a `small` tag.
+
+- [x] Add analytics (Vercel Analytics).
+
+- [x] Add comments, esp for drafts
+    * `nextra-theme-blog` has peer dependency on `react-cusdis`.

@@ -1,5 +1,7 @@
 import { Analytics } from '@vercel/analytics/react'
 
+import { GeistProvider, CssBaseline } from '@geist-ui/core'
+
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
 
@@ -7,6 +9,7 @@ import '../styles/main.css'
 import '../styles/custom.css'
 
 export default function Nextra({ Component, pageProps }) {
+
   return (
     <>
       <Head>
@@ -24,7 +27,10 @@ export default function Nextra({ Component, pageProps }) {
           crossOrigin="anonymous"
         />
       </Head>
-      <Component {...pageProps} />
+      <GeistProvider themeType="dark">
+        {/*<CssBaseline></CssBaseline>*/}
+        <Component {...pageProps} />
+      </GeistProvider>
       <Analytics />
     </>
   )
